@@ -14,7 +14,7 @@ import Signup from './components/Signup';
 import { Chat } from './components/Chat';
 
 
-axios.defaults.baseURL = "http://localhost:5000"
+axios.defaults.baseURL = "https://flames-proj-website-ecom-api.onrender.com"
 axios.defaults.withCredentials = true
 
 const App = () => {
