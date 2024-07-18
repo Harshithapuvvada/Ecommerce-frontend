@@ -1,0 +1,77 @@
+/* ChatBox.module.css */
+
+.chat-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa; /* Light background color */
+}
+
+.chat-card {
+    width: 50%;
+    max-width: 600px;
+    min-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chat-body {
+    display: flex;
+    flex-direction: column;
+    height: 500px; /* Fixed height for the chat area */
+    padding: 20px;
+}
+
+.messages-container {
+    flex-grow: 1;
+    overflow-y: auto;
+    margin-bottom: 15px;
+    padding-right: 10px;
+}
+
+.message {
+    display: inline-block;
+    max-width: 80%;
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+}
+
+.message-user {
+    background-color: #007bff;
+    color: white;
+    align-self: flex-end;
+}
+
+.message-bot {
+    background-color: #6c757d;
+    color: white;
+    align-self: flex-start;
+}
+
+.input-group {
+    display: flex;
+}
+
+.input-group .form-control {
+    flex-grow: 1;
+}
+
+.input-group .btn {
+    margin-left: 5px;
+}
+
+.input-group input::placeholder {
+    color: #adb5bd; /* Light gray placeholder color */
+}
+
+/* Custom scrollbar for the messages container */
+.messages-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.messages-container::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}

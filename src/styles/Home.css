@@ -1,0 +1,657 @@
+/* Navbar container */
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .navbar a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  /* Navbar collapse class for responsiveness */
+  .navbar-collapse {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Navbar ul styles */
+  .navbar-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  /* Navbar list item styles */
+  .navbar-nav .nav-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Navbar link styles */
+  .navbar-nav .nav-link {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Responsive navbar - will stack the links vertically instead of horizontally on small screens */
+  @media screen and (max-width: 600px) {
+    .navbar a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+  
+    .navbar-collapse {
+        flex-direction: column;
+    }
+  
+    .navbar-nav {
+        flex-direction: column;
+    }
+  }
+  
+  
+  
+  
+  
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+  #navbar{
+    background-color: rgb(240, 207, 21);
+    align-items: right;
+    padding-left: 200px;
+    
+  }
+  #logo{
+    color: black;
+    font-weight: bold;
+  }
+  .nav-link{
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+    margin-left: 90px;
+    transition: 0.5s ease;
+    
+  }
+    
+  
+  .nav-link:hover{
+    color: black;
+  }
+  .icons{
+    margin-right: 50px;
+  }
+  .icons img{
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  /* App.css */
+  
+  /* Navbar styles */
+  /* Navbar styles */
+  .navbar {
+    background-color:rgb(240, 207, 21);; /* Background color of the navbar */
+    color: white; /* Text color */
+    padding: 1pxpx; /* Padding around the navbar */
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+  }
+  
+  .icons {
+    display: flex; /* Use flexbox for icon alignment */
+    align-items: center; /* Align items vertically */
+  }
+  
+  .icons a {
+    margin-left: 15px; /* Adjust spacing between icons */
+  }
+  
+  .icons img {
+    width: 20px; /* Icon width */
+    height: 20px; /* Icon height */
+    cursor: pointer; /* Cursor style */
+  }
+  
+  
+  /* Navbar styles */
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* home section */
+  .home{
+    width: 100%;
+    height: 91.5vh;
+    background-color: #a9a9a929;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 0;
+  }
+  .home .img{
+    flex: 1 1 400px;
+  }
+  .home .img img{
+    width: 100%;
+  }
+  .home .content{
+    flex:1 1 400px;
+  }
+  .content h3{
+    margin-left: 50px;
+    font-size: 60px;
+    text-shadow: 1px 1px 1px black;
+    font-weight: bold;
+  }
+  .content h2{
+    margin-left: 50px;
+    font-size: 50px;
+    font-weight: bold;
+  }
+  .changecontent:after{
+    content: ' ';
+    color: #f0cf15;
+    text-shadow: 1px 1px 1px black;
+    animation: changetext 10s infinite linear;
+  }
+  @keyframes changetext{
+    0%{content: "Shirt";}
+    40%{content: "Pants";}
+    60%{content: "Shoes";}
+    100%{content: "Hoodies";}
+  }
+  .content p{
+    margin-left: 50px;
+  }
+  .content h5{
+    margin-left: 50px;
+    font-weight: bold;
+    font-size: 29px;
+  }
+  .content .btn{
+    margin-top: 20px;
+    margin-left: 50px;
+    width: 150px;
+    height: 38px;
+    letter-spacing: 3px;
+    background-color: #f0cf15;
+    color: black;
+    font-weight: bold;
+  }
+  @media screen and (max-width:800px){
+    .content h3{
+        margin-left: 50px;
+        font-size: 40px;
+    }
+    .content p{
+        margin-left: 50px;
+    }
+    .content .btn{
+        margin-left: 50px;
+    }
+  }
+  @media screen and (max-width:570px){
+    .content h3{
+        margin-left: 20px;
+    }
+    .content p{
+        margin-left: 20px;
+    }
+    .content .btn{
+        margin-left: 20px;
+    }
+  }
+  @media screen and (max-width:550px){
+    .content h3{
+        margin-left: 50px;
+    }
+    .content p{
+        margin-left: 50px;
+    }
+    .content .btn{
+        margin-left: 50px;
+    }
+  }
+  @media screen and (max-width:290px){
+    .content h3{
+        font-size: 30px;
+    }
+    .content h2{
+        font-size: 30px;
+    }
+    .changecontent{
+        font-size: 30px;
+    }
+  }
+  
+  /* home section */
+  
+  /*t-cards */
+  /* #t-cards .card{
+    border-radius: 5px;
+    transition: 0.5s ease;
+    cursor: pointer;
+  }
+  #t-cards .card:hover{
+    transform: translateY(-10px);
+  } */
+  #t-cards {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .card img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease; /* Smooth transition */
+  }
+  
+  .card img:hover {
+    transform: scale(1.05); /* Scale up the image slightly */
+  
+  }
+  
+  /*t-card */
+  
+  /* product cards */
+  /* #product-cards .card {
+    background-color: #423f3f29;
+    cursor: pointer;
+    padding: 0px 15px;
+} */
+
+.imagee{
+    width:60px;
+    height: 10px;
+    padding-left: 20px;
+}
+
+  #product-cards h1 {
+    margin-top: 50px;
+    font-weight: bold;
+    color: hwb(51 8% 6%);
+    text-shadow: 1px 1px 1px black;
+  }
+  .text-center {
+    text-align: center !important;
+  }
+  
+  #product-cards .row {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .card {
+    transition: transform 0.3s ease;
+    background-color: rgb(247, 244, 244);
+  }
+  
+  .card img {
+    width: 80%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+  
+  .card img:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-body {
+    text-align: center;
+  }
+  
+  .star .bx {
+    color: gold;
+  }
+  
+  h5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h5 span {
+    margin-left: 10px;
+  }
+  
+  h5 img {
+    cursor: pointer;
+  }
+  
+  
+  /* product cards */
+  /* banner */
+  .banner{
+    width: 100%;
+    height: 65vh;
+    /* background-image: url(b1.png); */
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 0;
+    margin-top: 100px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px black;
+  }
+  .banner .img{
+    flex: 1 1 400px;
+  }
+  .banner .img img{
+    width: 65%;
+    margin-left: 180px;
+    margin-bottom: 30px;
+  }
+  .banner .banner-content{
+    flex:1 1 400px;
+    margin-bottom: 30px;
+  }
+  .banner-content h1{
+    font-size: 50px;
+    text-shadow: 1px 1px 1px black;
+    font-weight: bold;
+    margin-left: 30px;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+  }
+  .banner-content h1 span{
+    font-size: 50px;
+    text-shadow: 1px 1px 1px black;
+    color: #f0cf15;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+  }
+  .banner-content p{
+    margin-left: 30px;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+  }
+  .banner-content h5{
+    margin-left: 30px;
+    font-weight: bold;
+    font-size: 29px;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+  }
+  .banner-content .btn{
+    margin-top: 20px;
+    margin-left: 30px;
+    width: 150px;
+    height: 38px;
+    letter-spacing: 3px;
+    background-color: #f0cf15;
+    color: black;
+    font-weight: bold;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+  }
+  @media screen and (max-width:990px){
+    .banner{
+        height: 100vh;
+    }
+    .banner .img img{
+        margin-left: 100px;
+    }
+  }
+  @media screen and (max-width:450px){
+    .banner .img img{
+        margin-left: 50px;
+    }
+  }
+  @media screen and (max-width:300px){
+    .banner .banner-content h1{
+        font-size: 30px;
+    }
+    .banner .banner-content h1 span{
+        font-size: 30px;
+    }
+  }
+  /* banner */
+  
+  /* banner2 */
+  .banner2 {
+    width: 100%;
+    height: 65vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 0;
+    margin-top: 100px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px black;
+  }
+  
+  .banner2 .img{
+    flex: 1 1 400px;
+  }
+  .banner2 .img img{
+    width: 80%;
+    margin-left: 150px;
+    margin-bottom: 30px;
+  }
+  .banner2 .banner2-content{
+    flex:1 1 400px;
+    margin-bottom: 30px;
+  }
+  .banner2-content h1{
+    font-size: 50px;
+    text-shadow: 1px 1px 1px black;
+    font-weight: bold;
+    margin-left: 30px;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+  }
+  .banner2-content h1 span{
+    font-size: 50px;
+    text-shadow: 1px 1px 1px black;
+    color: #f0cf15;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+  }
+  .banner2-content h2{
+    font-size: 50px;
+    color: black;
+    margin-left: 30px;
+    text-shadow: 1px 1px 1px black;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+  }
+  .bannerchangecontent:after{
+    content: ' ';
+    font-size: 50px;
+    color: #f0cf15;
+    text-shadow: 1px 1px 1px black;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    animation: bannercontent 10s infinite linear;
+  }
+  @keyframes bannercontent{
+    0%{content: "T Shirts";}
+    20%{content: "Pants";}
+    40%{content: "Kids Shirts";}
+    80%{content: "Froks";}
+  }
+  .banner2-content p{
+    margin-left: 30px;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+  }
+  .banner2-content h3{
+    margin-left: 30px;
+    font-weight: bold;
+    font-size: 29px;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+  }
+  .banner2-content .btn{
+    margin-top: 20px;
+    margin-left: 30px;
+    width: 150px;
+    height: 38px;
+    letter-spacing: 3px;
+    background-color: #f0cf15;
+    color: black;
+    font-weight: bold;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+  }
+  @media screen and (max-width:990px){
+    .banner2{
+        height: 100vh;
+    }
+    .banner2 .img img{
+        margin-left: 100px;
+    }
+  }
+  @media screen and (max-width:450px){
+    .banner2 .img img{
+        margin-left: 50px;
+    }
+  }
+  @media screen and (max-width:300px){
+    .banner2 .banner2-content h1{
+        font-size: 30px;
+    }
+    .banner2 .banner2-content h1 span{
+        font-size: 30px;
+    }
+  }
+  
+  /* banner2 */
+  
+  /* about us */
+  #about{
+    margin-top: 100px;
+  }
+  #about h2{
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+  }
+  #about p{
+    font-weight: bold;
+  }
+  /* about us */
+  /* General */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* About Us */
+  #about {
+    margin-top: -50px;
+    text-align: left;
+  
+  }
+  
+  #about h2 {
+    font-weight: bold;
+    font-size: xx-large;
+    text-shadow: 1px 1px 1px black;
+  }
+  
+  #about p {
+    font-weight: bold;
+    font-size: medium;
+  }
+  
+  /* Contact Us */
+  #contact{
+    margin-top: 30px;
+  }
+  /* Contact Form Styling */
+  #contact {
+    text-align: left;
+    padding: 50px 50PX;
+  }
+  
+  #contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  #contact .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  #contact .form-group {
+    margin-bottom: 15px;
+  }
+  
+  #contact .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  #contact #message button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    background-clip: padding-box;
+    padding: .375rem .75rem;
+    line-height: 1.5;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  
+  
+  
+  
+  }
+  
+  #contact #message button:hover {
+    background-color: #0056b3;
+  }
+  
+  #contact textarea.form-control {
+    resize: none;
+  }
+  
+  /* Footer */
+  
